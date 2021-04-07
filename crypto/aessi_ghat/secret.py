@@ -1,0 +1,1 @@
+flag = b'technex{use_block_ciphers_carefully}'

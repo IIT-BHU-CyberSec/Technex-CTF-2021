@@ -1,0 +1,1 @@
+function verify(){var s=document.getElementById("flag").value,t=4;"tech"==s.substring(0,t)?"1_Y3"==s.substring(6*t,7*t)&&"nex{"==s.substring(t,2*t)&&"4S74"==s.substring(4*t,5*t)&&"8_D4"==s.substring(3*t,4*t)&&"n_H4"==s.substring(5*t,6*t)&&"4J33"==s.substring(2*t,3*t)&&"33H}"==s.substring(7*t,8*t)&&alert("EUREKA !"):alert("Incorrect password")}

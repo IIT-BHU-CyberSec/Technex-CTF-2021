@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="row">
+    <div class="col-12 text-center mb-5">
+        <h1 class="display-2">Welcome to My Blog Site</h1>
+    </div>
+
+    <form class="col-12" method="POST" action="/login">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-4 mx-auto">
+                <div class="mb-3">
+                    <label for="username">Username</label>
+                    <input class="form-control" name="username" type="text" id="username" required />
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password</label>
+                    <input class="form-control" name="password" type="password" id="password" required />
+                </div>
+                <input class="btn btn-primary form-control" type="submit" />
+                <div class="text-end">
+                    <a href="/resetPassword">Forget Password?</a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+{% if message %}
+<div>{{message}}</div>
+{% endif %}
+
+
+{% endblock %}
